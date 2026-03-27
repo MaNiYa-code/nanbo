@@ -9,7 +9,7 @@ import { RISK_LEVELS } from '../utils/constants';
 
 function Card({ label, children }) {
   return (
-    <div className="rounded-3xl p-5 shadow-sm" style={{ background: '#FFFFFF', border: '1.5px solid #EDD5C0' }}>
+    <div className="halftone-corner rounded-3xl p-5 shadow-sm" style={{ background: '#FFFFFF', border: '1.5px solid #EDD5C0' }}>
       {label && (
         <p className="text-[10px] font-black tracking-[0.2em] uppercase mb-4" style={{ color: '#B07050' }}>
           {label}

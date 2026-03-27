@@ -38,6 +38,9 @@ export default function App() {
         </div>
       </header>
 
+      {/* ヘッダー下ハーフトーン区切り */}
+      <div className="halftone-divider max-w-md mx-auto" />
+
       {/* ── Main content ── */}
       <main className="max-w-md mx-auto px-4 py-5 pb-28">
         {activeTab === 'dashboard' && (

@@ -33,15 +33,14 @@ export function NanboCard({ nanboAmount, nanboPerDay, nanboPerWeek, settings, on
   const accentColor = isNegative ? '#FECD6D' : isWarning ? '#FECD6D' : '#FECD6D';
 
   return (
-    <div className="rounded-3xl overflow-hidden shadow-xl" style={{ background: bgGradient }}>
+    <div className="halftone-overlay rounded-3xl overflow-hidden shadow-xl" style={{ background: bgGradient }}>
 
       {/* ── Hero ── */}
       <div className="relative px-6 pt-6 pb-4 text-center">
-        {/* Decorative circles */}
-        <div className="absolute -top-8 -right-8 w-36 h-36 rounded-full opacity-10"
-          style={{ background: '#FECD6D' }} />
-        <div className="absolute -bottom-4 -left-6 w-24 h-24 rounded-full opacity-10"
-          style={{ background: '#fff' }} />
+        {/* ハーフトーン装飾 */}
+        <div className="halftone-burst" />
+        <div className="absolute -bottom-8 -left-8 w-36 h-36 rounded-full pointer-events-none"
+          style={{ background: 'radial-gradient(circle, rgba(254,205,109,0.12) 2px, transparent 2px)', backgroundSize: '14px 14px' }} />
 
         <p className="text-xs font-black tracking-[0.25em] uppercase mb-3 relative"
           style={{ color: 'rgba(255,255,255,0.55)' }}>

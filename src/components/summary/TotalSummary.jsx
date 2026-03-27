@@ -5,7 +5,7 @@ export function TotalSummary({ totalAmount, safeRatio, investRatio, riskScore })
   const level = RISK_LEVELS.find(l => riskScore >= l.min && riskScore < l.max) || RISK_LEVELS[RISK_LEVELS.length - 1];
 
   return (
-    <div className="relative overflow-hidden rounded-3xl p-6 text-white shadow-xl"
+    <div className="halftone-overlay relative overflow-hidden rounded-3xl p-6 text-white shadow-xl"
       style={{ background: 'linear-gradient(145deg, #70191D 0%, #970A12 55%, #B01A14 100%)' }}>
 
       {/* Decorative circles */}
